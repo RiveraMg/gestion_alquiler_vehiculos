@@ -16,6 +16,7 @@ public class Bicicleta {
 
     // Constructor(es), getters y setters
 
+    
     // Implementación de métodos de Vehiculo
    /* @Override
     public String getTipo() {
@@ -39,6 +40,60 @@ public class Bicicleta {
         // ejemplo: costo fijo por km, por ejemplo 0.5 por km
         return 0.5 * kmRecorridos;
     }*/
+
+    public Bicicleta(String id, String marca, String modelo, boolean disponible) {
+        this.id = id;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.disponible = disponible;
+    }
+    
+    //constructor vacio
+    public Bicicleta() {}
+    
+    //setter y getter
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public boolean isDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
+    
+    //metodo toString
+
+    @Override
+    public String toString() {
+        return "Bicicleta{" + "id=" + id + ", marca=" + marca + ", modelo=" + modelo + ", disponible=" + disponible + '}';
+    }
+    
+    
+    
 }
 
 
