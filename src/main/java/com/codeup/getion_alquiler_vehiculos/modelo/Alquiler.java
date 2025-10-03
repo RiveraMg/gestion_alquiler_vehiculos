@@ -89,6 +89,8 @@ public class Alquiler {
     public void setCostoTotal(double costoTotal) {
         this.costoTotal = costoTotal;
     }
+    
+    //metodo toString
 
     @Override
     public String toString() {

@@ -14,6 +14,25 @@ public interface Vehiculo {
     void acelerar(int kmh);
     void frenar();
     double calcularCostoUso(double kmRecorridos);
+    
+    
+    int getId();
+    void setId(int id);
+    String getMarca();
+    String getModelo();
+    String getColor();
+    String getPlaca();
+    int getAño();
+    boolean isDisponible();
+    void setDisponible(boolean disponible);
+    
+    public void setMarca(String marca);
+    
+    public void setModelo(String modelo);
+    
+    public void setColor(String color);
+    
+
 }
 
     
